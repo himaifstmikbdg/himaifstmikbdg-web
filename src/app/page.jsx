@@ -85,7 +85,7 @@ export default function Home() {
               <hr className=" flex-grow opacity-50" />
             </div>
             <p className={`${quicksand.className} mt-5 italic text-xs md:text-sm`}>
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti nostrum adipisci assumenda atque, praesentium aliquid. Commodi doloribus corrupti sint consectetur architecto corporis mollitia quam, cumque vitae minima aliquam explicabo.", <b>HIMA IF, 2020</b>
+            &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti nostrum adipisci assumenda atque, praesentium aliquid. Commodi doloribus corrupti sint consectetur architecto corporis mollitia quam, cumque vitae minima aliquam explicabo.&quot;, <b>HIMA IF, 2020</b>
             </p>
           </article>
 
