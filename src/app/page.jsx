@@ -183,7 +183,7 @@ export default function Home() {
             </h1>
             <hr className="my-5 opacity-0" />
             <p className={`${mont.className} md:text-lg text-sm`}>
-              Don't hesitate to share the knowledge and insight you have with us, lets become better individuals.
+              Don&rsquo;t hesitate to share the knowledge and insight you have with us, lets become better individuals.
               <br /> <br />
               Your feedback is very valuable for us. <b>^_^</b>
             </p>
