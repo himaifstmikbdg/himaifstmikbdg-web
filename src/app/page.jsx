@@ -130,6 +130,30 @@ export default function Home() {
                 Foto Studio Angkatan 2020/2021
               </h2>
             </div>
+            <div className="w-full flex-shrink-0 snap-start">
+              <img className="rounded-2xl w-full h-[300px] object-cover object-top" src="https://qzjbh7uie25fdc9m.public.blob.vercel-storage.com/foto-studio-hima-20232024" alt="" />
+              <hr className="my-2 opacity-0" />
+              <h1 className={`${mont.className} text-zinc-600  tracking-tighter text-sm md:text-lg`}>Tema Acara</h1>
+              <h2 className={`${mont.className} text-zinc-800 my-3 md:text-2xl tracking-tighter text-lg`}>
+                Foto Studio Angkatan 2020/2021
+              </h2>
+            </div>
+            <div className="w-full flex-shrink-0 snap-start">
+              <img className="rounded-2xl w-full h-[300px] object-cover object-top" src="https://qzjbh7uie25fdc9m.public.blob.vercel-storage.com/foto-studio-hima-20232024" alt="" />
+              <hr className="my-2 opacity-0" />
+              <h1 className={`${mont.className} text-zinc-600  tracking-tighter text-sm md:text-lg`}>Tema Acara</h1>
+              <h2 className={`${mont.className} text-zinc-800 my-3 md:text-2xl tracking-tighter text-lg`}>
+                Foto Studio Angkatan 2020/2021
+              </h2>
+            </div>
+            <div className="w-full flex-shrink-0 snap-start">
+              <img className="rounded-2xl w-full h-[300px] object-cover object-top" src="https://qzjbh7uie25fdc9m.public.blob.vercel-storage.com/foto-studio-hima-20232024" alt="" />
+              <hr className="my-2 opacity-0" />
+              <h1 className={`${mont.className} text-zinc-600  tracking-tighter text-sm md:text-lg`}>Tema Acara</h1>
+              <h2 className={`${mont.className} text-zinc-800 my-3 md:text-2xl tracking-tighter text-lg`}>
+                Foto Studio Angkatan 2020/2021
+              </h2>
+            </div>
             
           </div>
           <div className="w-full md:w-1/2 flex-grow-0 flex-shrink-0 md:pl-10 border md:border-0 rounded-2xl p-5">
