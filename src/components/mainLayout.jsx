@@ -17,7 +17,7 @@ export default function MainLayoutPage({children}) {
 
     return (
         <div className="w-full bg-white">
-            {showSidebar === true && <SidebarPage setShowSidebar={setShowSidebar}/>}
+            {showSidebar === true && <SidebarPage setShowSidebar={setShowSidebar} />}
             {showLogin === true && <LoginPage setShowLogin={setShowLogin} />}
             <nav className="flex justify-between items-center w-full px-5 md:px-20 py-2">
                 <div className="flex items-center gap-5">
@@ -41,7 +41,7 @@ export default function MainLayoutPage({children}) {
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute top-0 right-0 w-2 h-2 text-inherit p-2 " />
                         </a>
                     </div>
-                    <button type="button" className="w-8 h-8 flex md:hidden items-center justify-center rounded-lg border border-zinc-200 hover:border-zinc-800 text-zinc-400 hover:text-zinc-800 transition-all duration-300 hover:bg-zinc-900/5">
+                    <button type="button" onClick={() => setShowSidebar(state => !state)} className="w-8 h-8 flex md:hidden items-center justify-center rounded-lg border border-zinc-200 hover:border-zinc-800 text-zinc-400 hover:text-zinc-800 transition-all duration-300 hover:bg-zinc-900/5">
                         <FontAwesomeIcon icon={faBars} className="w-3 h-3 text-inherit" />
                     </button>
                     {loggedIn === false ? (
@@ -110,7 +110,16 @@ export default function MainLayoutPage({children}) {
 }
 
 function SidebarPage({setShowSidebar}) {
-    return
+    return (
+        <div className="fixed top-0 left-0 w-full h-screen backdrop-blur-xl z-[1001] flex py-10 justify-center bg-zinc-900/10">
+            <div className="space-y-5">
+                <button onClick={setShowSidebar(false)} type="button" className={`${mont.className} flex items-center justify-center gap-5 text-white bg-white/10 font-medium`}>
+                    Tutup
+                    <FontAwesomeIcon icon={faXmark} className="w-4 h-4 text-inherit" />
+                </button>
+            </div>
+        </div>
+    )
 }
 
 function LoginPage({setShowLogin}) {
@@ -186,7 +195,7 @@ function LoginPage({setShowLogin}) {
                         <a href="#" className={`${mont.className} text-xs md:text-sm text-zinc-800 hover:text-blue-800`}>
                             Lupa Password?
                         </a>
-                        <a href="#" className={`${mont.className} text-xs md:text-sm text-zinc-800 hover:text-blue-800`}>
+                        <a href="/profile/register" className={`${mont.className} text-xs md:text-sm text-zinc-800 hover:text-blue-800`}>
                             Buat Akun Baru
                         </a>
                     </div>
