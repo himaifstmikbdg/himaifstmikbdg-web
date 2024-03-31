@@ -60,7 +60,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-5">
           <div className="w-full flex-shrink-0 md:w-1/2">
             <h1 className={`${mont.className} font-medium tracking-tight text-3xl md:text-start text-center md:text-8xl`}>
-              Let's Get to Know us More<span className="text-blue-600">!</span>
+              Let&rsquo;s Get to Know us More<span className="text-blue-600">!</span>
             </h1>
           </div>
           <div className="w-full flex-shrink-0 md:w-1/2">
