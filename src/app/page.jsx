@@ -218,53 +218,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full hidden md:flex justify-between items-center px-5 md:px-20 py-5 bg-white">
-        <div className="flex items-center gap-10">
-          <h1 className={`${mont.className} md:text-lg text-transparent bg-clip-text bg-gradient-to-r from-zinc-800 to-blue-800 font-bold`}>
-            HIMATIF
-          </h1>
-          <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
-            STMIK Bandung
-          </a>
-          <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
-            HIMA SI
-          </a>
-          <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
-            Instagram
-          </a>
-          <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
-            Tiktok
-          </a>
-        </div>
-        <p className={`${mont.className} text-sm text-zinc-400 font-medium tracking-tighter`}>
-          HIMA Teknik Informatika, STMIK Bandung - 2024, All Rights Reserved
-        </p>
-      </div>
-
-      <div className="w-full flex md:hidden bg-white gap-5 px-5 py-5">
-        <div className="w-1/2">
-          <h1 className={`${mont.className} md:text-lg text-transparent bg-clip-text bg-gradient-to-r from-zinc-800 to-blue-800 font-bold`}>
-            HIMATIF
-          </h1>
-          <p className={`${mont.className} text-xs text-zinc-400  tracking-tighter`}>
-            HIMA Teknik Informatika, STMIK Bandung - 2024, All Rights Reserved
-          </p>
-        </div>
-        <div className="w-1/2 flex flex-col gap-2">
-          <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
-            STMIK Bandung
-          </a>
-          <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
-            HIMA SI
-          </a>
-          <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
-            Instagram
-          </a>
-          <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
-            Tiktok
-          </a>
-        </div>
-      </div>
+      
     </MainLayoutPage>
   );
 }

@@ -17,7 +17,7 @@ export default function MainLayoutPage({children}) {
 
     return (
         <div className="w-full bg-white">
-            {showSidebar === true && <SidebarPage />}
+            {showSidebar === true && <SidebarPage setShowSidebar={setShowSidebar}/>}
             {showLogin === true && <LoginPage setShowLogin={setShowLogin} />}
             <nav className="flex justify-between items-center w-full px-5 md:px-20 py-2">
                 <div className="flex items-center gap-5">
@@ -28,7 +28,7 @@ export default function MainLayoutPage({children}) {
                 </div>
                 <div className="flex items-center gap-5">
                     <div className="md:flex items-center gap-3 hidden">
-                        <a href="" className={"relative pr-5 px-3 py-2 rounded-lg text-xs md:text-sm text-zinc-800 hover:bg-black/5 " + mont.className}>
+                        <a href="/kepengurusan" className={"relative pr-5 px-3 py-2 rounded-lg text-xs md:text-sm text-zinc-800 hover:bg-black/5 " + mont.className}>
                             Kepengurusan
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute top-0 right-0 w-2 h-2 text-inherit p-2 " />
                         </a>
@@ -58,13 +58,59 @@ export default function MainLayoutPage({children}) {
             </nav>
             <div className="mt-10">
                 {children}
+                <div className="w-full hidden md:flex justify-between items-center px-5 md:px-20 py-5 bg-white">
+                    <div className="flex items-center gap-10">
+                        <h1 className={`${mont.className} md:text-lg text-transparent bg-clip-text bg-gradient-to-r from-zinc-800 to-blue-800 font-bold`}>
+                            HIMATIF
+                        </h1>
+                        <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
+                            STMIK Bandung
+                        </a>
+                        <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
+                            HIMA SI
+                        </a>
+                        <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
+                            Instagram
+                        </a>
+                        <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
+                            Tiktok
+                        </a>
+                    </div>
+                    <p className={`${mont.className} text-sm text-zinc-400 font-medium tracking-tighter`}>
+                    HIMA Teknik Informatika, STMIK Bandung - 2024, All Rights Reserved
+                    </p>
+                </div>
+                <div className="w-full flex md:hidden bg-white gap-5 px-5 py-5">
+                    <div className="w-1/2">
+                    <h1 className={`${mont.className} md:text-lg text-transparent bg-clip-text bg-gradient-to-r from-zinc-800 to-blue-800 font-bold`}>
+                        HIMATIF
+                    </h1>
+                    <p className={`${mont.className} text-xs text-zinc-400  tracking-tighter`}>
+                        HIMA Teknik Informatika, STMIK Bandung - 2024, All Rights Reserved
+                    </p>
+                    </div>
+                    <div className="w-1/2 flex flex-col gap-2">
+                    <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
+                        STMIK Bandung
+                    </a>
+                    <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
+                        HIMA SI
+                    </a>
+                    <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
+                        Instagram
+                    </a>
+                    <a href="" className={`${mont.className} font-medium text-zinc-400 tracking-tighter text-sm hover:text-zinc-600`}>
+                        Tiktok
+                    </a>
+                    </div>
+                </div>
             </div>
         </div>
     )
 }
 
-function SidebarPage() {
-
+function SidebarPage({setShowSidebar}) {
+    return
 }
 
 function LoginPage({setShowLogin}) {
