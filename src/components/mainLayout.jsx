@@ -32,7 +32,7 @@ export default function MainLayoutPage({children}) {
                             Kepengurusan
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute top-0 right-0 w-2 h-2 text-inherit p-2 " />
                         </a>
-                        <a href="" className={"relative pr-5 px-3 py-2 rounded-lg text-xs md:text-sm text-zinc-800 hover:bg-black/5 " + mont.className}>
+                        <a href="/events" className={"relative pr-5 px-3 py-2 rounded-lg text-xs md:text-sm text-zinc-800 hover:bg-black/5 " + mont.className}>
                             Events
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute top-0 right-0 w-2 h-2 text-inherit p-2 " />
                         </a>

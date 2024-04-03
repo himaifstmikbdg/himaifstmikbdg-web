@@ -12,7 +12,7 @@ export default function KepengurusanPage() {
         <MainLayoutPage>
             <Toaster />
 
-            <div className="text-zinc-800 px-5 md:px-20 w-full">
+            <div className="text-zinc-800 md:px-20 w-full">
                 <div className="flex flex-col md:flex-row gap-5 w-full">
                     <h1 className={`${mont.className} text-7xl font-medium tracking-tighter w-full md:w-1/3 flex-shrink-0 text-center md:text-start text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-zinc-800`}>
                         Vision
